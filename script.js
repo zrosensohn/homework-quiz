@@ -30,8 +30,7 @@ function displayQuestion(num) {
 function begin() {
     //Use an argument to set qbank when you begin.
     //...
-    
-    displayQuestion(count);
+    $("#timer").text(seconds + " seconds");
     $("#begin").empty();
 
     //Set Timer
@@ -46,6 +45,8 @@ function begin() {
         finalScore();
     }
 }, 1000)
+
+    displayQuestion(count);
 }
 
 //Check to see if answer is correct and display answer
